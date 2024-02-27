@@ -19,5 +19,5 @@ h1 {
     background-color: #6d09ef;
 }
 a:hover {
-    color: red; /* Change to your desired color */
+    color: rgb(0, 255, 140); /* Change to your desired color */
 }
