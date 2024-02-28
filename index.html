@@ -1,48 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Styling HTML with CSS</title>
-    <link rel="stylesheet" type="text/css" href="testing.css">
-    <style>
-        h1 {
-            color: rgb(0, 0, 255);
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #a209ef;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .button:hover {
-            background-color: #6d09ef;
-        }
-        /* New class for the second section */
-        .additional-content {
-            margin-top: 20px; /* Add some spacing */
-            padding: 10px;
-            background-color: #ffb2ec;
-            border: 1px solid #fe77a6;
-            border-radius: 5px;
-        }
-    </style>
+    <meta name="description" content="A fun webpage to see sily things">
+    <meta name="keywords" content="personal, fun, funny, silly">
+    <title>whoa what a cool webpage</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<body>
-    <!-- First section inside a div -->
     <div id="firstSection">
         <h1>Here is a goofy page</h1>
-        <p>This is a paragraph.</p>
-        <h1>Another Heading</h1>
-        <!-- Applying the .button class to a link -->
         <a href="https://youtu.be/v5DqmTtCPiQ?si=KlvolD3IUHds649g" class="button">Click me for a fun video</a>
         <button class="button" id="playButton">Click Me for something silly</button>
-        <!-- Define the audio element -->
         <audio id="myAudio">
             <source src="ID69_snd_puppy_bark.wav" type="audio/wav">
             Your browser does not support the audio element.
@@ -50,26 +17,21 @@
         <p>Hover over this <a href="https://rhythmheaven.fandom.com/wiki/Monkey">link</a> to see the color change.</p>
     </div>
 
-    <!-- New div for additional content -->
     <div class="additional-content">
         <h2>Additional Content</h2>
         <p>Have you seen this creature</p>
         <img src="mimikyu.png" alt="Mimikyu">
         <p>Now you have &#9786;</p>
-        <!-- You can add more elements here as needed -->
     </div>
-
-    <!-- Move the script to the end of the body -->
+    <div class="box">
+        This is a box. I changed things about it!
+    </div>
     <script>
-        // Get the button element
         var button = document.getElementById("playButton");
-
-        // Get the audio element
         var audio = document.getElementById("myAudio");
 
-        // Attach an event listener to the button
+
         button.addEventListener("click", function() {
-            // Play the audio when the button is clicked
             audio.play();
         });
     </script>
